@@ -1,6 +1,5 @@
 import Glogo from "../../assets/google-logo.png";
 import flogo from "../../assets/facebook-logo.png";
-
 const CommonLogo = () => {
   return (
     <div>
@@ -10,13 +9,22 @@ const CommonLogo = () => {
         <div className="bg-black h-[1px] w-full"></div>
       </div>
       <div className="flex gap-4 justify-center mt-5 ">
-        <div>
+        <div
+          onClick={() => window.open("http://www.google.com", "_blank")}
+          className="cursor-pointer"
+        >
           <img style={{ height: "40px" }} src={Glogo} alt="google" />
         </div>
-        <div>
+        <div
+          onClick={() => window.open("http://www.facebook.com", "_blank")}
+          className="cursor-pointer"
+        >
           <img style={{ height: "40px" }} src={flogo} alt="facebook" />
         </div>
-        <div>
+        <div
+          onClick={() => window.open("http://www.linkedin.com", "_blank")}
+          className="cursor-pointer"
+        >
           <svg
             fill="#0077b5"
             xmlns="http://www.w3.org/2000/svg"
