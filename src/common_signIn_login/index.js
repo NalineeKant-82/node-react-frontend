@@ -97,10 +97,9 @@ const CommonSignLog = ({ login }) => {
               display: "flex",
               flexDirection: "row-reverse",
               paddingTop: "8px",
-              cursor: "pointer",
             }}
           >
-            <p>forgot password?</p>
+            <p className="cursor-pointer">forgot password?</p>
           </div>
         )}
       </div>
